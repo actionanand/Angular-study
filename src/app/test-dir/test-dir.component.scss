@@ -1,3 +1,19 @@
 .myColor{
     color: green;
 }
+
+label{
+    cursor: pointer;
+    background-color: limegreen;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    //font-size: xx-small;
+    // text-transform: uppercase;
+    display: block;
+}
+
+label:hover{
+    background-color: transparent;
+    color: darkgreen;
+}

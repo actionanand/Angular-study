@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TestDirComponent implements OnInit {
 
   isDisabled:boolean = false;
+  value = 0;
 
   constructor() { }
 
@@ -16,6 +17,7 @@ export class TestDirComponent implements OnInit {
 
   onToggleChange(){
     this.isDisabled = !this.isDisabled
+    this.value++;
   }
 
 }

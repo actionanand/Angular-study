@@ -1,5 +1,6 @@
 <!-- <button class="btn btn-success" 
 (click)="isDisabled = !isDisabled">Toggle directive styles</button> -->
+
 <button class="btn btn-success" 
 (click)="onToggleChange()">Toggle directive styles</button>
 <hr>
@@ -16,4 +17,13 @@
         Styled using Better highlight directive
     </div>
 </div>
+
+<div [ngSwitch]="value">
+    <label *ngSwitchCase="1">ngSwitch value is 1, {{value}} times Toggle is pressed</label>
+    <label *ngSwitchCase="2">ngSwitch value is 2, {{value}} times Toggle is pressed</label>
+    <label *ngSwitchCase="3">ngSwitch value is 3, {{value}} times Toggle is pressed</label>
+    <label *ngSwitchDefault>ngSwitch default value is 13, {{value}} times Toggle is pressed</label>
+</div>
+
+
 
