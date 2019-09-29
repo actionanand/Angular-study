@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestDirComponent implements OnInit {
 
+  isDisabled:boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onToggleChange(){
+    this.isDisabled = !this.isDisabled
   }
 
 }

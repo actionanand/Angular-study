@@ -1,13 +1,19 @@
-
-<p [ngClass]="'myColor'" >Colored using,1 ngClass</p>
-<p [ngClass]="{myColor: true}" >Colored using,2 ngClass</p>
-<div [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">
-    style using ngStyle
-</div>
-<div appBasicHighlight>
-    Styled using basic highlight directive
-</div>
-<div [appBetterHighlight]="'lightgreen'" [defaultColor]="'yellow'">
-    Styled using Better highlight directive
+<!-- <button class="btn btn-success" 
+(click)="isDisabled = !isDisabled">Toggle directive styles</button> -->
+<button class="btn btn-success" 
+(click)="onToggleChange()">Toggle directive styles</button>
+<hr>
+<div *appUnless="isDisabled">
+    <p [ngClass]="'myColor'" >Colored using,1 ngClass</p>
+    <p [ngClass]="{myColor: true}" >Colored using,2 ngClass</p>
+    <div [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">
+        style using ngStyle
+    </div>
+    <div appBasicHighlight>
+        Styled using basic highlight directive
+    </div>
+    <div [appBetterHighlight]="'lightgreen'" [defaultColor]="'yellow'">
+        Styled using Better highlight directive
+    </div>
 </div>
 
