@@ -8,6 +8,7 @@ import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
 import { TestDirComponent } from './test-dir/test-dir.component';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight-directive';
+import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BasicHighlightDirective } from './basic-highlight/basic-highlight-direc
     CockpitComponent,
     ServerElementComponent,
     TestDirComponent,
-    BasicHighlightDirective
+    BasicHighlightDirective,
+    BetterHighlightDirective
   ],
   imports: [
     BrowserModule,
