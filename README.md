@@ -1,5 +1,12 @@
 # MyFirstApp
 
+Directives are used. 
+
+1. basic highlight(ElementRef)
+2. better highlight(hostbinding, hostlistener, renderer2, Input)
+3. viewchild, 
+4. unless directive(createEmbeddedView, TemplateRef, ViewContainerRef)
+
 This is the practice app of my angilar studies
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
 
